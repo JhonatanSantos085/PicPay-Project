@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import jhon.kiss.picpay_project.domain.user.User;
 import jhon.kiss.picpay_project.domain.user.UserDTO;
+import java.util.List;
 
 @Service
 public class UserService {
@@ -23,4 +24,9 @@ public class UserService {
         this.saveUser(newUser);
         return newUser;
     }
+
+    public List<User> getAllUsers(){
+        return this.repository.findAll();
+    }
+
 }

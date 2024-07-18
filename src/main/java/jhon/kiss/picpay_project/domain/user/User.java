@@ -29,7 +29,7 @@ public class User {
 
     public User(UserDTO dto){
         this.name = dto.name();
-        this.document = dto.email();
+        this.document = dto.document();
         this.email = dto.email();
         this.password = dto.password();
         this.userType = dto.userType();
