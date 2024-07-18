@@ -23,6 +23,7 @@ public class User {
     private String document;
     @Column(unique = true)
     private String email;
+    private String password;
     private UserType userType;
     private BigDecimal balance;
 
